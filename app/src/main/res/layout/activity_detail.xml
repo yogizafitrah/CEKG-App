@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".Activity.DetailActivity">
+
+    <TextView
+        android:id="@+id/txJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record Data Detail"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:id="@+id/txnama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:layout_below="@id/txJudul"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txNAMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" NAMA"
+        android:layout_toRightOf="@id/txnama"
+        android:layout_below="@id/txJudul"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txjk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender : "
+        android:layout_below="@id/txnama"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txJK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" JK"
+        android:layout_below="@id/txnama"
+        android:layout_toRightOf="@id/txjk"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txalamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address : "
+        android:layout_below="@id/txjk"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txALAMAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" ALAMAT"
+        android:layout_below="@id/txjk"
+        android:layout_toRightOf="@+id/txalamat"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txtgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date : "
+        android:layout_below="@id/txalamat"
+        android:textSize="15sp"
+        android:paddingBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/txTGL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" TGL"
+        android:layout_below="@id/txalamat"
+        android:layout_toRightOf="@+id/txtgl"
+        android:textSize="15sp"
+        android:paddingBottom="10dp"
+        />
+    <TextView
+        android:id="@+id/txanalisis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ECG Recording Analysis"
+        android:layout_below="@id/txtgl"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txtspt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interval PT : "
+        android:layout_below="@id/txanalisis"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txTSPT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" TSPT"
+        android:layout_below="@id/txanalisis"
+        android:layout_toRightOf="@+id/txtspt"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txbpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BPM : "
+        android:paddingBottom="5dp"
+        android:layout_below="@id/txtspt"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/txBPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" BPM"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/txtspt"
+        android:layout_toRightOf="@+id/txbpm"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tcirr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interval RR : "
+        android:layout_below="@id/txbpm"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txIRR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" IRR"
+        android:layout_below="@id/txbpm"
+        android:layout_toRightOf="@+id/tcirr"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/tcrrlokal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RR Lokal : "
+        android:layout_below="@id/tcirr"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txRRLOKAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" RRLOKAL"
+        android:layout_below="@id/tcirr"
+        android:layout_toRightOf="@id/tcrrlokal"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result : "
+        android:layout_below="@id/tcrrlokal"
+        android:textSize="15sp"
+        android:paddingBottom="5dp"
+        />
+    <TextView
+        android:id="@+id/txSTATUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" PREDICT"
+        android:layout_below="@id/tcrrlokal"
+        android:layout_toRightOf="@+id/txstatus"
+        android:textSize="15sp"
+        android:paddingBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txHR"
+        android:text="Heart Rate"
+        android:textSize="18sp"
+        android:layout_below="@+id/txSTATUS"
+        android:gravity="center"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="match_parent"
+        android:layout_below="@id/txHR"
+        android:layout_height="200dp"
+        android:id="@+id/LineChart"
+        />
+
+
+</RelativeLayout>

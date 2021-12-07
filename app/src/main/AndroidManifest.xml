@@ -1,29 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.cloudteam.ecg">
+    package="com.cloudteam.tesflask">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CEKG">
-        <activity android:name=".SplashScreen">
+        android:theme="@style/Theme.TesFlask"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.DetailActivity"
+            android:label="Classification"
+            android:parentActivityName=".Activity.listdata"/>
+        <activity
+            android:name=".Activity.UbahActivity"
+            android:label="Edit Data"
+            android:parentActivityName=".Activity.listdata" />
+        <activity
+            android:name=".Activity.TambahActivity"
+            android:parentActivityName=".Activity.listdata" />
+        <activity android:name=".Activity.listdata"
+            android:label="CEKG"
+            >
+
+        </activity>
+
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.CEKG.NoActionBar">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
     </application>
 
